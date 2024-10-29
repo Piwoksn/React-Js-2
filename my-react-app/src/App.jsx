@@ -14,6 +14,7 @@ function App() {
       <Student name="Noble Piwoks" age={29} isStudent={false} />
       <Student name="Patrick" age={20} isStudent={true} />
       <Student name="Sunshine" age={32} isStudent={true} />
+      <Student />
       <Button />
       <Food />
       <Card />
