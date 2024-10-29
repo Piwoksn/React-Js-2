@@ -11,7 +11,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
-      <Student name="Noble Piwoks" age="29" />
+      <Student name="Noble Piwoks" age={29} isStudent={true} />
       <Button />
       <Food />
       <Card />
