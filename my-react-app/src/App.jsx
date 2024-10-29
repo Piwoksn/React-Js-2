@@ -12,7 +12,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
-      <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
+      <UserGreeting isLoggedIn={false} username="mccoy@gmail.com" />
 
       <Student name="Noble Piwoks" age={29} isStudent={false} />
       <Student name="Patrick" age={20} isStudent={true} />
