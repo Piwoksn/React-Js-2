@@ -1,5 +1,5 @@
 import profilepic from "./assets/my_img/img.png";
-import Button from "./Button/Button";
+import Button from "./Button";
 function Card() {
   return (
     <div className="card">
