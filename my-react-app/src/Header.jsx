@@ -16,6 +16,7 @@ function Header() {
           <a href="http:#">Contact</a>
         </li>
       </ul>
+      <hr />
     </header>
   );
 }
