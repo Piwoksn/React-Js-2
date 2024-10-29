@@ -12,6 +12,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <List />
+
       <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
       <UserGreeting />
 
