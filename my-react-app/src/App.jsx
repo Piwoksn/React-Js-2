@@ -13,6 +13,7 @@ function App() {
 
       <Header />
       <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
+      <UserGreeting />
 
       <Student name="Noble Piwoks" age={29} isStudent={false} />
       <Student name="Patrick" age={20} isStudent={true} />
