@@ -1,4 +1,5 @@
 import profilepic from "./assets/my_img/img.png";
+import Button from "./Button";
 function Card() {
   return (
     <div className="card">
@@ -7,6 +8,7 @@ function Card() {
       <p className="card-text">
         I am a tech enthusiast. One who seeks knowledge to become great
       </p>
+      <Button />
     </div>
   );
 }

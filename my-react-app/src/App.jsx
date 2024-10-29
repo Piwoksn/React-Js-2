@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Food from "./Food";
 import Card from "./Card";
+import Button from "./Button";
 
 function App() {
   return (
@@ -9,10 +10,14 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <Button />
+
       <Food />
+
       <Card />
       <Card />
       <Card />
+
       <Footer />
     </>
   );
