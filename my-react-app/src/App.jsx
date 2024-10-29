@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Food from "./Food";
 import Card from "./Card";
-import Button from "./Button";
+import Button from "./Button/Button";
 
 function App() {
   return (
