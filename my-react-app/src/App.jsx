@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import Food from "./Food";
+import Card from "./Card";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
       <Header />
       <Food />
+      <Card />
       <Footer />
     </>
   );
