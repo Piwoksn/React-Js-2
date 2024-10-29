@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import Food from "./Food";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <Food />
       <Footer />
     </>
   );
