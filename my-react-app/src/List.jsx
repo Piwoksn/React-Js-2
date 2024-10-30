@@ -10,8 +10,9 @@ function List() {
   // });
 
   // or this
+  fruits.sort(); //sorts the array or list
   const listItem = fruits.map((item) => <li>{item}</li>);
-  return <ul> {listItem}</ul>;
+  return <ol> {listItem}</ol>;
 }
 
 export default List;
