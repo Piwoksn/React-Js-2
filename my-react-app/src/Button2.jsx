@@ -24,9 +24,10 @@ function Button2() {
   // To know all the click events
   const clickEvents = (e) => console.log(e);
 
+  const clickEvents2 = (e) => (e.target.textContent = "OUCH!");
   return (
     <>
-      <button onClick={(e) => clickEvents(e)}>Click events</button>
+      <button onClick={(e) => clickEvents2(e)}>Click events</button>
       <br />
       <button style={styles} onClick={() => handleClick3("Mccoy")}>
         Click Me :)
