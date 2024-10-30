@@ -8,6 +8,13 @@ import UserGreeting from "./UserGreeting";
 import List from "./List";
 
 function App() {
+  const fruits = [
+    { name: "Orange", calories: 95 },
+    { name: "Apple", calories: 45 },
+    { name: "Pineapple", calories: 105 },
+    { name: "Coconut", calories: 159 },
+    { name: "Banana", calories: 37 },
+  ];
   return (
     <>
       {/* we use fragments to be able to show more than one components */}
