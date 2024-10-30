@@ -5,6 +5,7 @@ function OnChangeEvent() {
 
   const setEventHandler = (event) => {
     setName(event.target.value);
+    // event.target.style.borderColor = "red";
   };
   // for Number
   const [qty, setQty] = useState(0);
@@ -22,7 +23,7 @@ function OnChangeEvent() {
 
   const paymentHandle = (event) => setPayment(event.target.value);
   // for radio buttons
-  const [pickup, setPickup] = useState("");
+  const [pickup, setPickup] = useState("Pick Up");
   const pickupHandler = (event) => {
     setPickup(event.target.value);
   };
