@@ -1,5 +1,11 @@
 function List() {
-  const fruits = ["Orange", "Apple", "Pineapple", "Coconut", "Banana"];
+  const fruits = [
+    { name: "Orange", calories: 95 },
+    { name: "Apple", calories: 45 },
+    { name: "Pineapple", calories: 105 },
+    { name: "Coconut", calories: 159 },
+    { name: "Banana", calories: 37 },
+  ];
 
   // const listItem = fruits.map((item, index) => {
   //   return (
@@ -11,7 +17,7 @@ function List() {
 
   // or this
   fruits.sort(); //sorts the array or list
-  const listItem = fruits.map((item) => <li>{item}</li>);
+  const listItem = fruits.map((fruit) => <li>{fruit.name}</li>);
   return <ol> {listItem}</ol>;
 }
 
