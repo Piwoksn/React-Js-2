@@ -5,11 +5,11 @@ function ProfilePicture() {
     width: "100px",
   };
 
-  const onHandleClick = () => console.log("OUCH!");
+  const onHandleClick = (e) => (e.target.style.display = "none");
 
   return (
     <img
-      onClick={() => onHandleClick()}
+      onClick={(e) => onHandleClick(e)}
       style={styles}
       src={imageUrl}
       alt="image"
