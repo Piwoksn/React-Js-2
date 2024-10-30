@@ -10,7 +10,7 @@ import Button2 from "./Button2";
 import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./myComponent";
 import Counter from "./Counter";
-import OnChangeEvent from "./MyComponent2";
+import OnChangeEvent from "./Onchanged";
 
 function App() {
   const fruits = [
