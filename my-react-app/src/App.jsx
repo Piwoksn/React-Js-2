@@ -15,12 +15,20 @@ function App() {
     { name: "Coconut", calories: 159 },
     { name: "Banana", calories: 37 },
   ];
+  const vegetables = [
+    { name: "Potato", calories: 110 },
+    { name: "Celery", calories: 15 },
+    { name: "Carrots", calories: 25 },
+    { name: "Corn", calories: 63 },
+    { name: "broccoli", calories: 50 },
+  ];
   return (
     <>
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
-      <List items={fruits} category="fruits" />
+      <List items={fruits} category="Fruits" />
+      <List items={vegetables} category="Vegetables" />
 
       <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
       <UserGreeting />
