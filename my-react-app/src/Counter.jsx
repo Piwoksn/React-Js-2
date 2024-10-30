@@ -11,6 +11,13 @@ function Counter() {
   const increment = () => {
     setAge(age + 1);
   };
+
+  //   for bool
+  const [isEmployed, setisEmployed] = useState(false);
+  const toggleEmployedStatus = () => {
+    setisEmployed(!isEmployed);
+  };
+
   return (
     <div>
       <p>Name: {name}</p>
@@ -18,6 +25,9 @@ function Counter() {
 
       <p>Age: {age}</p>
       <button onClick={increment}>Increment Age</button>
+
+      <p>Employed: {isEmployed ? "Yes" : "No"}</p>
+      <button onClick={toggleEmployedStatus}>Check</button>
     </div>
   );
 }
