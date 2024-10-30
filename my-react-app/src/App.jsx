@@ -31,10 +31,10 @@ function App() {
       {vegetables.length > 0 ? (
         <List items={vegetables} category="Vegetables" />
       ) : null} */}
-      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
-      {vegetables.length > 0 ? (
+      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
+      {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables" />
-      ) : null}
+      )}
 
       <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
       <UserGreeting />
