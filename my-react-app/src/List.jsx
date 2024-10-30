@@ -16,9 +16,14 @@ function List() {
   // });
 
   // or this
-  fruits.sort(); //sorts the array or list
+  // fruits.sort(); //sorts the array or list
+  // sorting the dictionary
+  fruits.sort((a, b) => a.name.localeCompare(b.name)); //sorts teh dictionary
+
   const listItem = fruits.map((fruit, index) => (
-    <li key={index}>{fruit.name}</li>
+    <li key={index}>
+      {fruit.name}: &nbsp;<b>{fruit.calories}</b>
+    </li>
   ));
   return <ol> {listItem}</ol>;
 }
