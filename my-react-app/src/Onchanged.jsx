@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-// onchange effect
+
 function OnChangeEvent() {
   const [name, setName] = useState("Guest");
 
-  const changename = (event) => {
+  const setEventHandler = (event) => {
     setName(event.target.value);
   };
-  return (
-    <>
-      <input value={name} type="text" onChange={changename} />
 
+  return (
+    <div>
+      <input type="text" value={name} onChange={setEventHandler} />
       <h3>Name: {name}</h3>
-    </>
+    </div>
   );
 }
-
 export default OnChangeEvent;
