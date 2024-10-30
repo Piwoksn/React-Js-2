@@ -1,4 +1,6 @@
 function List(props) {
+  const category = props.category;
+
   const itemList = props.items.map((item, index) => (
     <li key={index}>
       {item.name}: &nbsp; <b>{item.calories}</b>
@@ -33,7 +35,13 @@ function List(props) {
   // ));
 
   // return <ol> {listItem}</ol>;
-  return <ol> {itemList}</ol>;
+  return (
+    <>
+      {" "}
+      <h3>{props.category}</h3>
+      <ol> {itemList}</ol>;
+    </>
+  );
 }
 
 export default List;
