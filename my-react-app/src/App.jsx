@@ -6,6 +6,7 @@ import Button from "./Button";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 import List from "./List";
+import Button2 from "./Button2";
 
 function App() {
   const fruits = [
@@ -27,6 +28,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <Button2 />
+
       {/* {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
       {vegetables.length > 0 ? (
         <List items={vegetables} category="Vegetables" />
