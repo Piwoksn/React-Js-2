@@ -17,6 +17,10 @@ function OnChangeEvent() {
   function commentHandler(e) {
     setComment(e.target.value);
   }
+  // for select element
+  const [payment, setPayment] = useState("");
+
+  const paymentHandle = (event) => setPayment(event.target.value);
 
   return (
     <div>
@@ -32,6 +36,13 @@ function OnChangeEvent() {
       ></textarea>
 
       <p>{comment}</p>
+      <select value={payment} onChange={paymentHandle}>
+        <option value="">Select Payment Method</option>
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="Gift Card">Gift Card</option>
+      </select>
+      <p>Payment: {payment}</p>
     </div>
   );
 }
