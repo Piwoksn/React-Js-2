@@ -28,12 +28,12 @@ function List() {
   const lowCalFruit = fruits.filter((fruit) => fruit.calories < 100);
 
   //
-  const listItem = lowCalFruit.map((lowCalFruit, index) => (
+  const listItem = fruits.map((fruit, index) => (
     <li key={index}>
-      {lowCalFruit.name}: &nbsp;<b>{lowCalFruit.calories}</b>
+      {fruit.name}: &nbsp;<b>{fruit.calories}</b>
     </li>
   ));
-  // return <ol> {listItem}</ol>;
+
   return <ol> {listItem}</ol>;
 }
 
