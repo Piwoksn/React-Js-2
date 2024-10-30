@@ -20,7 +20,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
-      <List />
+      <List items={fruits} category="fruits" />
+
       <UserGreeting isLoggedIn={true} username="mccoy@gmail.com" />
       <UserGreeting />
 
