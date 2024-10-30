@@ -18,7 +18,8 @@ function List() {
   // or this
   // fruits.sort(); //sorts the array or list
   // sorting the dictionary
-  fruits.sort((a, b) => a.name.localeCompare(b.name)); //sorts teh dictionary
+  // fruits.sort((a, b) => a.name.localeCompare(b.name)); //sorts the dictionary Alphabetical
+  fruits.sort((a, b) => b.name.localeCompare(a.name)); //sorts the dictionary Reverse Alphabetical
 
   const listItem = fruits.map((fruit, index) => (
     <li key={index}>
