@@ -21,7 +21,11 @@ function OnChangeEvent() {
   const [payment, setPayment] = useState("");
 
   const paymentHandle = (event) => setPayment(event.target.value);
-
+  // for radio buttons
+  const [pickup, setPickup] = useState("");
+  const pickupHandler = (event) => {
+    setPickup(event.target.value);
+  };
   return (
     <div>
       <input type="text" value={name} onChange={setEventHandler} />
@@ -43,6 +47,26 @@ function OnChangeEvent() {
         <option value="Gift Card">Gift Card</option>
       </select>
       <p>Payment: {payment}</p>
+      <label htmlFor="Pickup">
+        <input
+          type="radio"
+          value="Pick Up"
+          checked={pickup === "Pick Up"}
+          onChange={pickupHandler}
+        />
+        Pick up
+      </label>
+      <br />
+      <label htmlFor="Delivery">
+        <input
+          type="radio"
+          value="Delivery"
+          checked={pickup === "Delivery"}
+          onChange={pickupHandler}
+        />
+        Delivery
+      </label>
+      <p>Shipping: {pickup}</p>
     </div>
   );
 }
