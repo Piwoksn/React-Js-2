@@ -17,7 +17,9 @@ function List() {
 
   // or this
   fruits.sort(); //sorts the array or list
-  const listItem = fruits.map((fruit) => <li>{fruit.name}</li>);
+  const listItem = fruits.map((fruit, index) => (
+    <li key={index}>{fruit.name}</li>
+  ));
   return <ol> {listItem}</ol>;
 }
 
