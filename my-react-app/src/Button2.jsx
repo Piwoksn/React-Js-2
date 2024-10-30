@@ -27,7 +27,10 @@ function Button2() {
   return (
     <>
       <button onClick={(e) => clickEvents(e)}>Click events</button>
-      <button onClick={() => handleClick3("Mccoy")}>Click Me :)</button>
+      <br />
+      <button style={styles} onClick={() => handleClick3("Mccoy")}>
+        Click Me :)
+      </button>
       <br />
       <button style={styles} onClick={() => alert("You Just Clicked me.")}>
         Alert
