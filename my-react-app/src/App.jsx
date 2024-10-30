@@ -11,6 +11,7 @@ import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./myComponent";
 import Counter from "./Counter";
 import OnChangeEvent from "./Onchanged";
+import ColorPicker from "./ColorPicker";
 
 function App() {
   const fruits = [
@@ -32,6 +33,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+
+      <ColorPicker />
 
       <OnChangeEvent />
       <Counter />
