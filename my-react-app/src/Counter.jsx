@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 
-function Count() {
-  const [counter, setCounter] = useState(0);
+function Counter() {
+  const [name, setName] = useState("Guest");
+  const updateName = () => {
+    setName("McCoy");
+  };
+  //   for age
+  const [age, setAge] = useState(0);
 
-  const decrease = () => {
-    setCounter(counter - 1);
-  };
-  const reset = () => {
-    setCounter(0);
-  };
-  const increase = () => {
-    setCounter(counter + 1);
+  const increment = () => {
+    setAge(age + 1);
   };
   return (
-    <>
-      <h1>{counter}</h1>
-      <button onClick={decrease}>Decrease</button>
-      <button onClick={reset}>Reset</button>
-      <button onClick={increase}>Increase</button>
-    </>
+    <div>
+      <p>Name: {name}</p>
+      <button onClick={updateName}>Set Name</button>
+
+      <p>Age: {age}</p>
+      <button onClick={increment}>Increment Age</button>
+    </div>
   );
 }
 
-export default Count;
+export default Counter;
