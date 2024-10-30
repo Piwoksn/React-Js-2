@@ -9,6 +9,7 @@ import List from "./List";
 import Button2 from "./Button2";
 import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./myComponent";
+import Counter from "./Counter";
 
 function App() {
   const fruits = [
@@ -30,6 +31,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <Counter />
 
       <MyComponent />
 
