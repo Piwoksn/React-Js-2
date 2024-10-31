@@ -13,13 +13,13 @@ function ToDoList() {
     <div className="body">
       <div className="to-to-list">
         <h1>To-Do-List</h1>
-        <input type="text" className="addInput" />
+        <input type="text" className="addInput" placeholder="Add new item" />
         <button className="add-button">Add</button>
 
         <ol>
           {toDo.map((element, index) => (
             <li key={index}>
-              {element}
+              <span className="text">{element}</span>
               <button className="delete-button">Delete</button>
               <button className="move-up">Up</button>
               <button className="move-down">Down</button>
