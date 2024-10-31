@@ -16,7 +16,10 @@ function ToDoList() {
   };
 
   const del = (index) => {
-    setToDO((td) => td.filter((element, i) => i !== index));
+    // setToDO((td) => td.filter((element, i) => i !== index));
+
+    const newList = toDo.filter((element, i) => i !== index);
+    setToDO(newList);
   };
 
   function up(index) {
