@@ -10,8 +10,12 @@ function UpdaterFunction2() {
   const handleYearChange = (event) => {
     setCar((c) => ({ ...car, year: event.target.value }));
   };
-  const handleMakeChange = (event) => {};
-  const handleModelChange = (event) => {};
+  const handleMakeChange = (event) => {
+    setCar((c) => ({ ...c, make: event.target.value }));
+  };
+  const handleModelChange = (event) => {
+    setCar((c) => ({ ...c, model: event.target.value }));
+  };
   return (
     <div>
       <p>
