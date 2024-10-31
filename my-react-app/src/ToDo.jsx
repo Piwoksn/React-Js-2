@@ -23,10 +23,25 @@ function ToDoList() {
   };
 
   function up(index) {
-    setNewToDO();
-    setToDO((td) => td.shift(index - 1));
+    if (index > 0) {
+      const updatedTask = [...toDo];
+      [updatedTask[index], updatedTask[index - 1]] = [
+        updatedTask[index - 1],
+        updatedTask[index],
+      ];
+      setToDO(updatedTask);
+    }
   }
-  function down(index) {}
+  function down(index) {
+    if (index < toDo.length - 1) {
+      const updatedTask = [...toDo];
+      [updatedTask[index], updatedTask[index + 1]] = [
+        updatedTask[index + 1],
+        updatedTask[index],
+      ];
+      setToDO(updatedTask);
+    }
+  }
 
   // return
   return (
@@ -50,10 +65,10 @@ function ToDoList() {
               <button className="delete-button" onClick={() => del(index)}>
                 Delete
               </button>
-              <button className="move-up" onClick={up}>
+              <button className="move-up" onClick={() => up(index)}>
                 Up
               </button>
-              <button className="move-down" onClick={down}>
+              <button className="move-down" onClick={() => down(index)}>
                 Down
               </button>
             </li>
