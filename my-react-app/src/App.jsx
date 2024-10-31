@@ -16,6 +16,7 @@ import UpdaterFunction from "./UpdaterFunction";
 import UpdaterFunction2 from "./UpdaterFunction2";
 import FoodList from "./FoodList";
 import ListCars from "./CarList";
+import ToDoList from "./ToDo";
 
 function App() {
   const fruits = [
@@ -37,6 +38,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <ToDoList />
+
       <ListCars />
 
       <FoodList />
