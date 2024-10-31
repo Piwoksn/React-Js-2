@@ -10,10 +10,14 @@ function UseEffect() {
   function add() {
     setCount((c) => c + 1);
   }
+  function minus() {
+    setCount((c) => c - 1);
+  }
   return (
     <>
       <h1>Count: {count}</h1>
       <button onClick={add}>Add</button>
+      <button onClick={minus}>Subtract</button>
       <br />
       <br />
     </>
