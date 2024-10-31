@@ -4,7 +4,9 @@ function UseEffect() {
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("green");
 
-  document.title = `Count: ${count} ${color}`;
+  useEffect(() => {
+    document.title = `Count: ${count} ${color}`;
+  }, [count, color]);
 
   function add() {
     setCount((c) => c + 1);
