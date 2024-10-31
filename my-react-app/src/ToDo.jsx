@@ -15,6 +15,12 @@ function ToDoList() {
     setToDO((td) => td.filter((element, i) => i !== index));
   };
 
+  function up(index) {
+    setNewToDO();
+    setToDO((td) => td.shift(index - 1));
+  }
+  function down(index) {}
+
   // return
   return (
     <div className="body">
@@ -37,8 +43,12 @@ function ToDoList() {
               <button className="delete-button" onClick={() => del(index)}>
                 Delete
               </button>
-              <button className="move-up">Up</button>
-              <button className="move-down">Down</button>
+              <button className="move-up" onClick={up}>
+                Up
+              </button>
+              <button className="move-down" onClick={down}>
+                Down
+              </button>
             </li>
           ))}
         </ol>
