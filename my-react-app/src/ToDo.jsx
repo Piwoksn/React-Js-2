@@ -17,7 +17,14 @@ function ToDoList() {
         <button className="add-button">Add</button>
 
         <ol>
-          <li>{toDo.map()}</li>
+          {toDo.map((element, index) => (
+            <li key={index}>
+              {element}
+              <button className="delete-button">Delete</button>
+              <button className="move-up">Up</button>
+              <button className="move-down">Down</button>
+            </li>
+          ))}
         </ol>
       </div>
     </div>
