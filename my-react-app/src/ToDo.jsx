@@ -5,10 +5,12 @@ function ToDoList() {
 
   const [newToDO, setNewToDO] = useState();
 
+  const handleInput = (event) => {
+    setNewToDO(event.target.value);
+  };
   const add = () => {
-    const activity = document.getElementById("new-item").value;
-    setToDO((td) => [...td, activity]);
-    document.getElementById("new-item").value = "";
+    setToDO((td) => [...td, newToDO]);
+    setNewToDO("");
   };
 
   const del = (index) => {
@@ -26,12 +28,7 @@ function ToDoList() {
     <div className="body">
       <div className="to-to-list">
         <h1>To-Do-List</h1>
-        <input
-          type="text"
-          id="new-item"
-          className="addInput"
-          placeholder="Add new item"
-        />
+        <input type="text" onChange={handleInput} placeholder="Add new item" />
         <button className="add-button" onClick={add}>
           Add
         </button>
