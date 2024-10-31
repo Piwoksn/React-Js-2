@@ -4,8 +4,8 @@ function UseEffect() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    document.title = `${count}`;
-  });
+    document.title = `Count: ${count}`;
+  }, [count]);
 
   function add() {
     setCount((c) => c + 1);
