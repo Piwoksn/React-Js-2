@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 function UpdaterFunction() {
   const [count, setCount] = useState(0);
-  const plus = () => setCount((c) => c + 1);
-  setCount((c) => c + 1);
-  setCount((c) => c + 1);
+  const plus = () => {
+    setCount((c) => c + 1);
+    setCount((c) => c + 1);
+    setCount((c) => c + 1);
+  };
   const minus = () => setCount((c) => c - 1);
   const reset = () => setCount(0);
   //   return
