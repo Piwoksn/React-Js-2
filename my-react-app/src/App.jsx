@@ -15,6 +15,7 @@ import ColorPicker from "./ColorPicker";
 import UpdaterFunction from "./UpdaterFunction";
 import UpdaterFunction2 from "./UpdaterFunction2";
 import FoodList from "./FoodList";
+import ListCars from "./CarList";
 
 function App() {
   const fruits = [
@@ -36,6 +37,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <ListCars />
+
       <FoodList />
 
       <UpdaterFunction2 />
