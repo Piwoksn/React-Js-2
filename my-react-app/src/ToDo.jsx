@@ -9,8 +9,10 @@ function ToDoList() {
     setNewToDO(event.target.value);
   };
   const add = () => {
-    setToDO((td) => [...td, newToDO]);
-    setNewToDO("");
+    if (newToDO.trim() !== "") {
+      setToDO((td) => [...td, newToDO]);
+      setNewToDO("");
+    }
   };
 
   const del = (index) => {
