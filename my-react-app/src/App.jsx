@@ -13,6 +13,7 @@ import Counter from "./Counter";
 import OnChangeEvent from "./Onchanged";
 import ColorPicker from "./ColorPicker";
 import UpdaterFunction from "./UpdaterFunction";
+import UpdaterFunction2 from "./UpdaterFunction2";
 
 function App() {
   const fruits = [
@@ -34,6 +35,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <UpdaterFunction2 />
       <UpdaterFunction />
       <ColorPicker />
 
