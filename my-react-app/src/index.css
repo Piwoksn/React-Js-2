@@ -247,3 +247,28 @@
   font-size: 1.5rem;
   color: rgb(77, 76, 76);
 }
+
+.clock-body {
+  background-image: url(assets/my_img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* TO ALIGN CENTER VERTICALLY */
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  align-items: center;
+}
+.clock-container {
+}
+
+.clock {
+  color: yellow;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+}
