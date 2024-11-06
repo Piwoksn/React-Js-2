@@ -21,7 +21,12 @@ function DigitalClock() {
 
     hours = hours % 12 || 12;
 
-    return `${hours}:${minutes}:${seconds} ${meridian}`;
+    return `${padZero(hours)}:${padZero(minutes)}:${padZero(
+      seconds
+    )} ${meridian}`;
+  }
+  function padZero(number) {
+    return (number < 10 ? "0" : "") + number;
   }
   return (
     <>
