@@ -21,6 +21,7 @@ import UseEffect from "./useEffects";
 import Continuation from "./WidthAndHeightOfWindow";
 import DigitalClock from "./DigitalClock";
 import ComponentA from "./ComponentA";
+import MyComponent2 from "./UseRef";
 
 function App() {
   const fruits = [
@@ -42,6 +43,8 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <MyComponent2 />
+      <br />
       <ComponentA />
       <br />
       <br />
