@@ -18,6 +18,7 @@ import FoodList from "./FoodList";
 import ListCars from "./CarList";
 import ToDoList from "./ToDo";
 import UseEffect from "./useEffects";
+import Continuation from "./WidthAndHeightOfWindow";
 
 function App() {
   const fruits = [
@@ -39,6 +40,10 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <Continuation />
+      <br />
+      <br />
+      <br />
       <UseEffect />
 
       <ToDoList />
