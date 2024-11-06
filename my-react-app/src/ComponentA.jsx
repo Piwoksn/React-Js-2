@@ -9,7 +9,9 @@ function ComponentA() {
     <div className="box">
       <h1>ComponentA</h1>
       <h2>{`Hello ${user}`}</h2>
-      <ComponentB user={user} />
+      <UserContext.Provider value={user}>
+        <ComponentB user={user} />
+      </UserContext.Provider>
     </div>
   );
 }
