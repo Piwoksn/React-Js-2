@@ -19,6 +19,7 @@ import ListCars from "./CarList";
 import ToDoList from "./ToDo";
 import UseEffect from "./useEffects";
 import Continuation from "./WidthAndHeightOfWindow";
+import DigitalClock from "./DigitalClock";
 
 function App() {
   const fruits = [
@@ -40,6 +41,7 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <DigitalClock />
       <Continuation />
       <br />
       <br />
