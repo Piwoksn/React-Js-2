@@ -20,6 +20,7 @@ import ToDoList from "./ToDo";
 import UseEffect from "./useEffects";
 import Continuation from "./WidthAndHeightOfWindow";
 import DigitalClock from "./DigitalClock";
+import ComponentA from "./ComponentA";
 
 function App() {
   const fruits = [
@@ -41,6 +42,10 @@ function App() {
       {/* we use fragments to be able to show more than one components */}
 
       <Header />
+      <ComponentA />
+      <br />
+      <br />
+      <br />
       <DigitalClock />
       <Continuation />
       <br />
